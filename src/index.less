@@ -1,0 +1,343 @@
+@import "less/variables";
+@import "less/utils";
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.space {
+  margin: 1rem;
+}
+
+.space-horizontal {
+  margin: 0 1rem;
+}
+
+.space-vertical {
+  margin: 1rem 0;
+}
+
+.main-content {
+  max-width: 1600px;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-content-center {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 750px;
+}
+
+.width-limit {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.width-limit-left {
+    margin-left: 0;
+  }
+}
+
+.width-limit-wide {
+  max-width: 1600px;
+}
+
+.width-limit-medium {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.width-limit-medium-left {
+    margin-left: 0;
+  }
+}
+
+.width-limit-small {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.width-limit-medium-left {
+    margin-left: 0;
+  }
+}
+
+.text-content {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#root > [data-reactroot] {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: auto;
+  flex-grow: 1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.block-xxs {
+  margin-bottom: .5rem;
+}
+.block-xxxs {
+  margin-bottom: .25rem;
+}
+
+
+.block-xs {
+  margin-bottom: 1rem;
+}
+
+.block-s {
+  margin-bottom: 1.5rem;
+}
+
+.block-m {
+  margin-bottom: 3rem;
+}
+
+.block-l {
+  margin-bottom: 4.5rem;
+}
+
+.block-xl {
+  margin-bottom: 6rem;
+}
+
+.block-xxl {
+  margin-bottom: 7.5rem;
+}
+
+.margin-top-s {
+  margin-top: 1.5rem;
+}
+
+.margin-top-m {
+  margin-top: 3rem;
+}
+
+.margin-left-m {
+  margin-left: 3rem;
+}
+
+.form-wrapper {
+  max-width: 600px;
+}
+
+.form-greyscale {
+  background-color: @background-grey;
+  padding: 3rem 2rem;
+}
+
+.form-white {
+  background-color: @off-white;
+  padding: 3rem 2rem;
+}
+
+.divider-m {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider-l {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.relative {
+  position: relative;
+}
+
+.light-section {
+  background-color: @off-white;
+}
+
+.required:after {
+  margin: -.2em 0 0 .2em;
+  content: '*';
+  color: #db2828;
+}
+
+.page-header {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.button-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 182% !important;
+}
+
+.cards-container {
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.error-modal-description {
+  margin-top: 2rem;
+}
+
+.error-modal-header {
+  background-color: @error-dark !important;
+  color: white !important;
+}
+.wide {
+  width: 1200px !important;
+}
+
+.logo {
+  max-height: 42px;
+  max-width: 150px;
+  margin-left: 1rem;
+}
+
+.program-title {
+  padding: .78571429em .78571429em;
+  margin-bottom: 0;
+}
+
+.header-padding {
+  padding: 1em 1em
+}
+
+.webpage-link {
+  display: block;
+  margin-top: 3rem;
+}
+
+.opacity-7 {
+  opacity: .7;
+}
+
+.order-summary-table {
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+.status-normal {
+  padding: .5rem;
+  background-color: #21ba45;
+  color: white;
+  border-radius: 5px;
+}
+
+.order-status-completed {
+  &:extend(.status-normal);
+}
+
+.order-status-created {
+  &:extend(.status-normal);
+}
+
+.order-status-cancelled {
+  &:extend(.status-normal);
+  background-color: #db2828;
+}
+
+.tag {
+  padding: .5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.tag-blue {
+  background-color: @primary-color;
+}
+
+.tag-teal {
+  background-color: #009688;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.padding {
+  padding-top: 4rem;
+}
+
+.text-decoration {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.customDatePickerInput {
+  width: 113% !important;
+}
+
+.programDatePickerInput {
+  width: 123% !important;
+}
+.vestingDatePickerInput {
+  width: 129% !important;
+}
+
+.sharePriceDatePickerInput {
+  width: 123% !important;
+}
+
+.ui.checkbox label {
+  font-weight: 700;
+}
+
+.datepicker-z-index {
+  position: relative;
+  z-index: inherit !important;
+}
+
+ul.react-datepicker__time-list {
+  padding-right: 0.1em !important;
+  padding-left: 0.1em !important;
+}
+
+.vps-number {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.ui.form .ten.wide.field {
+  width: 100% !important;
+}

@@ -1,0 +1,118 @@
+@import '../less/variables';
+
+.overview-section {
+  padding: 12rem 0;
+}
+
+.overview-section-compact {
+  padding: 12rem 0 4.5rem 0;
+}
+
+.overview-section-action-panel {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.overview-section-header {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+.overview-section-header-compact {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.overview-section-container > :last-child {
+  flex: 1;
+}
+
+.overview-section:nth-child(even) {
+  background-color: #ECEFF1;
+}
+
+.overview-section-content-element {
+  padding: 7.5rem 3rem 0 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.overview-section-content-element-compact {
+  padding: 0 2rem 0 2rem;
+}
+
+.overview-section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.overview-text-highlight {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: bold;
+
+  @media (max-width: 450px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.overview-text-highlight-compact {
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: bold;
+
+  @media (max-width: 450px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.overview-text-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .overview-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .overview-section-content-element {
+    margin-top: 4.5rem;
+  }
+
+  .overview-section-content-element-margin-bottom {
+    margin-bottom: 4.5rem;
+  }
+
+  .overview-highlight-right-margin {
+    margin-right: 0;
+  }
+}
+
+.overview-section-content-element-margin-bottom {
+  margin-bottom: 7.5rem;
+}
+
+.performance-criteria {
+  margin: -7.5rem auto 6rem;
+  max-width: 550px;
+}
+
+.performance-criteria-compact {
+  margin: 0 auto 3rem;
+  max-width: 550px;
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "DOM",
+      "es2017"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "build",
+    "jsx": "react",
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"],
+  "files": [
+    "src/index.tsx"
+  ]
+}

@@ -1,0 +1,3 @@
+# tell search bots to ignore this site
+User-agent: *
+Disallow: /

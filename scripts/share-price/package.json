@@ -1,0 +1,8 @@
+{
+  "name": "share-price",
+  "version": "0.0.1",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.0",
+    "moment": "^2.20.1"
+  }
+}
